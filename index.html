@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NexSource IT Solutions | Bantayan, Cebu IT Services &amp; Software</title>
+<meta name="description" content="NexSource IT Solutions provides business software, computer sets, printers, CCTV installation, and electronic scoreboards to businesses and LGUs across Bantayan Island, Cebu, Philippines." />
+<link rel="icon" type="image/png" href="assets/img/logo-mark-64.png" />
+
+<!-- Tailwind (utility classes) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: { 950: '#060c1f', 900: '#0a1330', 800: '#0f1c42', 700: '#152655' },
+          brandblue: { 600: '#1e4fd8', 500: '#2f6fef' },
+          cyan: { 400: '#4fc3f7', 300: '#7fd8ff' },
+          gold: { 400: '#f5b942', 300: '#ffd777' },
+          ink: { DEFAULT: '#101a33', soft: '#4b5875' },
+        },
+        fontFamily: {
+          display: ['Outfit', 'system-ui', 'sans-serif'],
+          body: ['Inter', 'system-ui', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "NexSource IT Solutions",
+  "image": "assets/img/brand-hero.jpg",
+  "telephone": "+63-966-248-1473",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bantayan Island",
+    "addressRegion": "Cebu",
+    "addressCountry": "PH"
+  },
+  "url": "https://www.facebook.com/profile.php?id=61579564315796",
+  "areaServed": "Bantayan Island, Cebu, Philippines"
+}
+</script>
+</head>
+<body class="font-body text-ink bg-[--color-bg]">
+
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:top-3 focus:left-3 focus:bg-white focus:text-ink focus:px-4 focus:py-2 focus:rounded-md focus:shadow-lg">Skip to main content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header id="site-header" class="sticky top-0 z-40 bg-navy-950/90 backdrop-blur border-b border-white/10 transition-shadow">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-[72px]">
+      <a href="#top" class="flex items-center gap-3 shrink-0" aria-label="NexSource IT Solutions home">
+        <img src="assets/img/logo-mark-128.png" alt="" width="40" height="40" class="logo-mark" />
+        <span class="leading-tight">
+          <span class="block font-display font-bold text-white text-lg tracking-tight">NexSource</span>
+          <span class="block text-[10px] font-semibold tracking-[0.2em] text-cyan-300">IT SOLUTIONS</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
+        <a href="#services" class="text-sm font-medium text-white/85 hover:text-white transition-colors">Services</a>
+        <a href="#docuvault" class="text-sm font-medium text-white/85 hover:text-white transition-colors">DocuVault</a>
+        <a href="#about" class="text-sm font-medium text-white/85 hover:text-white transition-colors">About</a>
+        <a href="#contact" class="text-sm font-medium text-white/85 hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <a href="tel:+639662481473" class="text-sm font-semibold text-white/90 hover:text-cyan-300 transition-colors flex items-center gap-2">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1c1 3 3 5 6 6l1-2 5 2v2c0 1-1 2-2 2-9 0-14-5-14-14Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          0966 248 1473
+        </a>
+        <a href="#contact" class="btn-primary tap-target inline-flex items-center px-5 py-2.5 rounded-full text-sm font-semibold">Get a Quote</a>
+      </div>
+
+      <button id="menu-toggle" class="md:hidden tap-target inline-flex items-center justify-center rounded-md text-white" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden">
+      <nav class="flex flex-col gap-1 pb-5" aria-label="Mobile">
+        <a href="#services" class="tap-target flex items-center px-2 text-white/90 hover:text-white font-medium border-b border-white/10">Services</a>
+        <a href="#docuvault" class="tap-target flex items-center px-2 text-white/90 hover:text-white font-medium border-b border-white/10">DocuVault</a>
+        <a href="#about" class="tap-target flex items-center px-2 text-white/90 hover:text-white font-medium border-b border-white/10">About</a>
+        <a href="#contact" class="tap-target flex items-center px-2 text-white/90 hover:text-white font-medium border-b border-white/10">Contact</a>
+        <a href="tel:+639662481473" class="tap-target flex items-center px-2 text-cyan-300 font-semibold">Call: 0966 248 1473</a>
+        <a href="#contact" class="btn-primary tap-target inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold mt-3">Get a Quote</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ===================== HERO ===================== -->
+  <section id="top" class="bg-brand-gradient text-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <span class="badge-pill bg-white/10 border border-white/15 text-cyan-300">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          YOUR Trusted IT Partner
+        </span>
+
+        <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.2rem] leading-[1.08] mt-6">
+          IT Solutions Built for <span class="text-gradient">Your Business</span>
+        </h1>
+
+        <p class="mt-6 text-lg text-white/80 max-w-xl">
+          From business software and computer systems to CCTV and networking &mdash; NexSource keeps shops, offices, and local government units running smoothly.
+        </p>
+
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a href="#contact" class="btn-primary tap-target inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold">
+            Get a Free Quote
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#services" class="btn-outline tap-target inline-flex items-center px-7 py-3.5 rounded-full font-semibold">View Our Services</a>
+        </div>
+
+        <p class="mt-8 text-sm font-semibold tracking-wide text-white/50 font-display">EMPOWERING YOUR TECHNOLOGY</p>
+      </div>
+
+      <div class="reveal">
+        <img
+          src="assets/img/brand-hero.jpg"
+          alt="NexSource IT Solutions logo on a dark blue technology-themed background"
+          class="w-full rounded-2xl shadow-2xl ring-1 ring-white/10"
+          width="1536" height="1024"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VALUE STRIP ===================== -->
+  <section class="bg-white border-b border-[--color-border]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="reveal flex flex-col items-center text-center gap-2">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" class="text-brandblue-600" aria-hidden="true"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <span class="font-display font-semibold text-sm sm:text-base">Reliable Hardware</span>
+      </div>
+      <div class="reveal flex flex-col items-center text-center gap-2">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" class="text-brandblue-600" aria-hidden="true"><path d="M12 21c4-3 7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 3 8 7 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="font-display font-semibold text-sm sm:text-base">Local, On-Island Support</span>
+      </div>
+      <div class="reveal flex flex-col items-center text-center gap-2">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" class="text-brandblue-600" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="font-display font-semibold text-sm sm:text-base">Custom Software</span>
+      </div>
+      <div class="reveal flex flex-col items-center text-center gap-2">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" class="text-brandblue-600" aria-hidden="true"><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="font-display font-semibold text-sm sm:text-base">Fast Response Times</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="py-24 bg-[--color-bg]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl reveal">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3">Complete IT Solutions, Under One Roof</h2>
+        <p class="mt-4 text-ink-soft text-lg">Hardware, software, and security &mdash; sourced, installed, and supported by a team based right here on Bantayan Island.</p>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Business Software -->
+        <div class="reveal card-hover bg-white rounded-[--radius-lg] p-7 border border-[--color-border]">
+          <div class="w-12 h-12 rounded-xl bg-brandblue-600/10 flex items-center justify-center text-brandblue-600">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl mt-5">Business Software Solutions</h3>
+          <p class="mt-2 text-ink-soft">Custom software, point-of-sale systems, and digital tools &mdash; including our own DocuVault platform &mdash; built to simplify how your business or office runs.</p>
+        </div>
+
+        <!-- Computer Sets -->
+        <div class="reveal card-hover bg-white rounded-[--radius-lg] p-7 border border-[--color-border]">
+          <div class="w-12 h-12 rounded-xl bg-brandblue-600/10 flex items-center justify-center text-brandblue-600">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl mt-5">Computer Sets</h3>
+          <p class="mt-2 text-ink-soft">Desktop computer sets sourced, assembled, and set up for offices, schools, internet shops, and homes &mdash; matched to your budget and workload.</p>
+        </div>
+
+        <!-- Printers -->
+        <div class="reveal card-hover bg-white rounded-[--radius-lg] p-7 border border-[--color-border]">
+          <div class="w-12 h-12 rounded-xl bg-brandblue-600/10 flex items-center justify-center text-brandblue-600">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9V3h12v6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><rect x="4" y="9" width="16" height="8" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="7" y="14" width="10" height="7" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl mt-5">Printers</h3>
+          <p class="mt-2 text-ink-soft">Printer sales, setup, and supplies for offices and businesses of any size, with support when jams, drivers, or network setup get in the way.</p>
+        </div>
+
+        <!-- CCTV -->
+        <div class="reveal card-hover bg-white rounded-[--radius-lg] p-7 border border-[--color-border]">
+          <div class="w-12 h-12 rounded-xl bg-brandblue-600/10 flex items-center justify-center text-brandblue-600">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="8" width="13" height="9" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M15 11.5 21 8v9l-6-3.5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl mt-5">CCTV Systems</h3>
+          <p class="mt-2 text-ink-soft">Professional CCTV installation and setup to keep your property, business, or barangay covered court secure and monitored.</p>
+        </div>
+
+        <!-- Basketball Scoreboards -->
+        <div class="reveal card-hover bg-white rounded-[--radius-lg] p-7 border border-[--color-border]">
+          <div class="w-12 h-12 rounded-xl bg-brandblue-600/10 flex items-center justify-center text-brandblue-600">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7 9h3M14 9h3M7 12h3M14 12h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-xl mt-5">Basketball Scoreboards</h3>
+          <p class="mt-2 text-ink-soft">Electronic scoreboard systems installed and maintained for covered courts and gyms &mdash; built for the Philippines' favorite sport.</p>
+        </div>
+
+        <!-- CTA Card -->
+        <div class="reveal bg-brand-gradient rounded-[--radius-lg] p-7 flex flex-col justify-between text-white">
+          <div>
+            <h3 class="font-display font-semibold text-xl">Not sure what you need?</h3>
+            <p class="mt-2 text-white/75">Tell us about your setup and we'll recommend the right solution &mdash; no pressure, no jargon.</p>
+          </div>
+          <a href="#contact" class="mt-6 inline-flex items-center gap-2 font-semibold text-cyan-300 hover:text-cyan-200">
+            Talk to us
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOCUVAULT SPOTLIGHT ===================== -->
+  <section id="docuvault" class="py-24 bg-navy-900 text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal order-2 lg:order-1">
+        <img
+          src="assets/img/docuvault-promo.jpg"
+          alt="DocuVault: Never miss a deadline again. RA 11032 compliance, built for Philippine LGUs."
+          class="w-full rounded-2xl shadow-2xl ring-1 ring-white/10"
+          width="1536" height="864"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="order-1 lg:order-2">
+        <span class="badge-pill bg-gold-400/15 border border-gold-400/30 text-gold-300">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Built for Philippine LGUs
+        </span>
+
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-5">DocuVault &mdash; Never Miss a Deadline Again</h2>
+        <p class="mt-5 text-white/75 text-lg">
+          Our document tracking platform helps local government units meet RA 11032 (Ease of Doing Business Act) requirements &mdash; so permits, resolutions, and ordinances no longer sit buried in old files.
+        </p>
+
+        <ul class="mt-7 space-y-4">
+          <li class="flex items-start gap-3">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-gold-300 shrink-0 mt-0.5" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5 11 15l5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="text-white/85">Automated deadline tracking for every document and request</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-gold-300 shrink-0 mt-0.5" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5 11 15l5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="text-white/85">RA 11032-compliant workflows, built specifically for LGUs</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-gold-300 shrink-0 mt-0.5" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5 11 15l5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="text-white/85">Centralized, searchable records instead of paper trails</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-gold-300 shrink-0 mt-0.5" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5 11 15l5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="text-white/85">Real-time visibility into where every document stands</span>
+          </li>
+        </ul>
+
+        <a href="#contact" class="mt-9 inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold bg-gold-400 text-navy-950 hover:brightness-105 transition tap-target">
+          Request a DocuVault Demo
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHY CHOOSE US ===================== -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl reveal">
+        <p class="section-eyebrow">Why NexSource</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3">A Full-Service IT Partner, Based on the Island</h2>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="reveal">
+          <div class="w-12 h-12 rounded-xl bg-brandblue-600/10 flex items-center justify-center text-brandblue-600">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21c4-3 7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 3 8 7 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg mt-4">Local &amp; Reliable</h3>
+          <p class="mt-2 text-ink-soft">Based right on Bantayan Island &mdash; no waiting days for a technician to arrive from Cebu City.</p>
+        </div>
+        <div class="reveal">
+          <div class="w-12 h-12 rounded-xl bg-brandblue-600/10 flex items-center justify-center text-brandblue-600">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg mt-4">Hardware to Software</h3>
+          <p class="mt-2 text-ink-soft">Computers, printers, CCTV, and custom software &mdash; one team handles it all, so nothing falls through the cracks.</p>
+        </div>
+        <div class="reveal">
+          <div class="w-12 h-12 rounded-xl bg-brandblue-600/10 flex items-center justify-center text-brandblue-600">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg mt-4">Fast, Personal Support</h3>
+          <p class="mt-2 text-ink-soft">Reach a real person by call or Facebook message &mdash; not a call center script.</p>
+        </div>
+        <div class="reveal">
+          <div class="w-12 h-12 rounded-xl bg-brandblue-600/10 flex items-center justify-center text-brandblue-600">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="font-display font-semibold text-lg mt-4">Built for PH Businesses</h3>
+          <p class="mt-2 text-ink-soft">From LGU compliance to sari-sari store POS &mdash; solutions shaped around how business is actually done here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="py-24 bg-[--color-bg]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal">
+        <p class="section-eyebrow">About Us</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3">About NexSource IT Solutions</h2>
+        <p class="mt-5 text-ink-soft text-lg">
+          NexSource IT Solutions is a Bantayan, Cebu-based technology partner providing computer hardware, printers, security systems, and custom software &mdash; including our DocuVault platform &mdash; to businesses, offices, and local government units across the island and beyond.
+        </p>
+        <p class="mt-4 text-ink-soft text-lg">
+          We believe good technology shouldn't be complicated or far away. That's why we're based right here on the island, ready to set up, support, and grow with the businesses and communities we serve.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <span class="badge-pill bg-brandblue-600/10 text-brandblue-600">Business Software</span>
+          <span class="badge-pill bg-brandblue-600/10 text-brandblue-600">Computer Sets</span>
+          <span class="badge-pill bg-brandblue-600/10 text-brandblue-600">Printers</span>
+          <span class="badge-pill bg-brandblue-600/10 text-brandblue-600">CCTV</span>
+          <span class="badge-pill bg-brandblue-600/10 text-brandblue-600">Scoreboards</span>
+        </div>
+      </div>
+
+      <div class="reveal bg-brand-gradient rounded-[--radius-lg] p-10 text-white">
+        <img src="assets/img/logo-mark-128.png" alt="" width="56" height="56" class="logo-mark logo-mark-lg" />
+        <p class="font-display font-semibold text-xl mt-6">"Empowering Your Technology"</p>
+        <p class="mt-3 text-white/70">That's more than our tagline &mdash; it's how we approach every installation, every repair, and every line of software we write for our neighbors on Bantayan Island.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="py-24 bg-navy-950 text-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mx-auto text-center reveal">
+        <p class="section-eyebrow text-cyan-300">Get In Touch</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3">Let's Talk About Your IT Needs</h2>
+        <p class="mt-4 text-white/70 text-lg">Whether it's one printer or a full office setup, we're a call or message away.</p>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <a href="tel:+639662481473" class="reveal card-hover flex flex-col items-center text-center gap-3 bg-white/5 border border-white/10 rounded-[--radius-lg] p-8">
+          <div class="w-12 h-12 rounded-xl bg-cyan-400/15 flex items-center justify-center text-cyan-300">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1c1 3 3 5 6 6l1-2 5 2v2c0 1-1 2-2 2-9 0-14-5-14-14Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <p class="font-display font-semibold">Call Us</p>
+            <p class="text-white/70 mt-1">0966 248 1473</p>
+          </div>
+        </a>
+
+        <a href="https://web.facebook.com/profile.php?id=61579564315796" target="_blank" rel="noopener noreferrer" class="reveal card-hover flex flex-col items-center text-center gap-3 bg-white/5 border border-white/10 rounded-[--radius-lg] p-8">
+          <div class="w-12 h-12 rounded-xl bg-cyan-400/15 flex items-center justify-center text-cyan-300">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 9h3V6h-3c-2 0-3.5 1.5-3.5 3.5V11H8v3h2.5v6h3v-6H16l.5-3h-3V9.6c0-.4.3-.6.5-.6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <p class="font-display font-semibold">Message Us</p>
+            <p class="text-white/70 mt-1">NexSource Bantayan on Facebook</p>
+          </div>
+        </a>
+
+        <div class="reveal flex flex-col items-center text-center gap-3 bg-white/5 border border-white/10 rounded-[--radius-lg] p-8 sm:col-span-2 lg:col-span-1">
+          <div class="w-12 h-12 rounded-xl bg-cyan-400/15 flex items-center justify-center text-cyan-300">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21c4-3 7-6.5 7-11a7 7 0 0 0-14 0c0 4.5 3 8 7 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <div>
+            <p class="font-display font-semibold">Find Us</p>
+            <p class="text-white/70 mt-1">Bantayan Island, Cebu, Philippines</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-navy-950 border-t border-white/10 text-white/70">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <a href="#top" class="flex items-center gap-3" aria-label="NexSource IT Solutions home">
+        <img src="assets/img/logo-mark-128.png" alt="" width="32" height="32" class="logo-mark" />
+        <span class="font-display font-bold text-white">NexSource</span>
+      </a>
+      <p class="mt-4 text-sm">Empowering Your Technology &mdash; IT solutions for businesses and LGUs on Bantayan Island, Cebu.</p>
+    </div>
+
+    <div>
+      <p class="font-display font-semibold text-white mb-4">Services</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#services" class="hover:text-white transition-colors">Business Software</a></li>
+        <li><a href="#services" class="hover:text-white transition-colors">Computer Sets</a></li>
+        <li><a href="#services" class="hover:text-white transition-colors">Printers</a></li>
+        <li><a href="#services" class="hover:text-white transition-colors">CCTV Systems</a></li>
+        <li><a href="#services" class="hover:text-white transition-colors">Basketball Scoreboards</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="font-display font-semibold text-white mb-4">Company</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#docuvault" class="hover:text-white transition-colors">DocuVault</a></li>
+        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="font-display font-semibold text-white mb-4">Contact</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="tel:+639662481473" class="hover:text-white transition-colors">0966 248 1473</a></li>
+        <li><a href="https://web.facebook.com/profile.php?id=61579564315796" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Facebook: NexSource Bantayan</a></li>
+        <li>Bantayan Island, Cebu, Philippines</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 text-xs text-white/50 flex flex-col sm:flex-row justify-between gap-2">
+      <p>&copy; <span id="current-year">2026</span> NexSource IT Solutions. All rights reserved.</p>
+      <p>Bantayan Island, Cebu, Philippines</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
