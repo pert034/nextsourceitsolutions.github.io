@@ -199,26 +199,73 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:40px 80
 .footer-bottom p{font-size:12px;color:var(--text-s)}
 
 /* ─── RESPONSIVE ─── */
+/* ── TABLET (960px) ── */
 @media(max-width:960px){
   nav{padding:12px 20px}
   .nav-links{display:none}
-  section{padding:60px 24px}
-  .hero{padding:100px 24px 56px}
-  .hero-stats{gap:22px}
-  .product-block{grid-template-columns:1fr}
+  .nav-cta{display:none}
+  .nav-hamburger{display:flex}
+  section{padding:56px 20px}
+  .product-block{grid-template-columns:1fr;gap:24px}
   .product-block.rev{direction:ltr}
   .p-compare{grid-template-columns:1fr}
   .footer-inner{grid-template-columns:1fr 1fr}
-  footer{padding:36px 24px}
-  .cta-sec{padding:72px 24px}
-  .footer-bottom{flex-direction:column;align-items:flex-start}
+  footer{padding:36px 20px}
+  .cta-sec{padding:60px 20px}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:8px}
+  .suite-table{font-size:13px}
+  .impl-table{font-size:13px}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .banner-inner{padding:24px 20px}
 }
-@media(max-width:520px){
+/* ── MOBILE (600px) ── */
+@media(max-width:600px){
+  .banner-inner{flex-direction:column;text-align:center;padding:20px 16px;gap:16px}
+  .banner-logo{justify-content:center}
+  .banner-tagline{white-space:normal;font-size:0.85rem;max-width:100%}
+  .banner-cta{align-self:center}
+  .banner-graphic{display:none}
+  section{padding:44px 16px}
+  h2{font-size:1.5rem}
+  .services-grid{grid-template-columns:1fr}
+  .suite-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .suite-table thead{display:none}
+  .suite-table tr{display:block;margin-bottom:16px;background:var(--navy-card);border-radius:var(--r);padding:12px}
+  .suite-table td{display:flex;justify-content:space-between;padding:6px 8px;font-size:13px;border:none;border-bottom:1px solid var(--border)}
+  .suite-table td:last-child{border-bottom:none}
+  .suite-table td:before{content:attr(data-label);font-weight:600;color:var(--text-s);margin-right:8px}
+  .impl-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .vid-frame{aspect-ratio:16/9}
   .footer-inner{grid-template-columns:1fr}
-  .hero h1{font-size:36px}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:8px}
   .cta-cards{flex-direction:column;align-items:center}
-  .cta-card{width:100%;max-width:320px}
+  .cta-card{width:100%;max-width:100%}
+  .cta-sec{padding:44px 16px}
+  .p-compare{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .hero-stats{flex-wrap:wrap;gap:16px}
+  .stat-num{font-size:2rem}
+  nav{padding:10px 16px}
+  .nav-logo span{font-size:14px}
 }
+/* ── SMALL MOBILE (380px) ── */
+@media(max-width:380px){
+  .banner-brand-name{font-size:0.95rem}
+  .banner-cta{font-size:0.85rem;padding:10px 16px}
+  section{padding:36px 12px}
+}
+
+/* ── HAMBURGER & MOBILE MENU ── */
+.nav-hamburger{display:none;flex-direction:column;justify-content:space-between;width:28px;height:20px;background:none;border:none;cursor:pointer;padding:0;z-index:300}
+.nav-hamburger span{display:block;width:100%;height:2px;background:#fff;border-radius:2px;transition:all 0.3s}
+.nav-hamburger.open span:nth-child(1){transform:translateY(9px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:var(--navy-mid);z-index:199;flex-direction:column;padding:16px 0;border-bottom:2px solid var(--gold);max-height:calc(100vh - 60px);overflow-y:auto}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:12px 24px;color:var(--text-p);text-decoration:none;font-size:15px;border-bottom:1px solid var(--border);transition:background 0.2s}
+.mobile-menu a:hover{background:var(--navy-card)}
+.mobile-menu .mobile-cta{background:var(--gold);color:var(--navy);font-weight:700;text-align:center;margin:16px 24px;border-radius:8px;border:none}
 </style>
 </head>
 <body>
@@ -246,7 +293,24 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:40px 80
     <a href="#contact">Contact</a>
   </div>
   <a href="#contact" class="nav-cta">Book a Demo</a>
+  <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#lgu-systems" onclick="closeMobile()">LGU Systems</a>
+  <a href="#tala" onclick="closeMobile()">↳ TALA</a>
+  <a href="#budgethub" onclick="closeMobile()">↳ BudgetHub</a>
+  <a href="#lexicon" onclick="closeMobile()">↳ LEXICON</a>
+  <a href="#docuvault" onclick="closeMobile()">↳ DocuVault</a>
+  <a href="#resqhub" onclick="closeMobile()">↳ RESQHUB</a>
+  <a href="#services" onclick="closeMobile()">IT Services</a>
+  <a href="#compliance" onclick="closeMobile()">Compliance</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="#contact" class="mobile-cta" onclick="closeMobile()">Book a Demo</a>
+</div>
 
 <!-- BRAND BANNER -->
 <div class="brand-banner">
@@ -629,5 +693,28 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:40px 80
   </div>
 </footer>
 
+
+<script>
+const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+navToggle.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.toggle('open');
+  navToggle.classList.toggle('open', isOpen);
+  navToggle.setAttribute('aria-expanded', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+});
+function closeMobile() {
+  mobileMenu.classList.remove('open');
+  navToggle.classList.remove('open');
+  navToggle.setAttribute('aria-expanded', false);
+  document.body.style.overflow = '';
+}
+// Close on outside click
+document.addEventListener('click', (e) => {
+  if (!navToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+    closeMobile();
+  }
+});
+</script>
 </body>
 </html>
