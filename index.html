@@ -21,7 +21,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--navy);color:var(--text-p);line-height:1.6;font-size:16px}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--navy);color:var(--text-p);line-height:1.6;font-size:16px;overflow-x:hidden}
 
 
 /* ─── BRAND BANNER ─── */
@@ -266,6 +266,19 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:40px 80
 .mobile-menu a{padding:12px 24px;color:var(--text-p);text-decoration:none;font-size:15px;border-bottom:1px solid var(--border);transition:background 0.2s}
 .mobile-menu a:hover{background:var(--navy-card)}
 .mobile-menu .mobile-cta{background:var(--gold);color:var(--navy);font-weight:700;text-align:center;margin:16px 24px;border-radius:8px;border:none}
+
+/* ── SUITE CARDS (replaces table) ── */
+.suite-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;width:100%}
+.suite-card{background:var(--navy-card);border:1.5px solid var(--border);border-radius:var(--r);padding:20px 22px;display:flex;flex-direction:column;gap:8px;transition:border-color 0.2s}
+.suite-card:hover{border-color:var(--gold)}
+.suite-card-name{font-size:1.15rem;font-weight:700;color:var(--gold)}
+.suite-card-desc{font-size:0.9rem;color:var(--text-b);line-height:1.5;flex:1}
+.suite-card-user{font-size:0.8rem;color:var(--text-s)}
+.suite-card .plink{font-size:0.85rem;color:var(--gold);text-decoration:none;font-weight:600;margin-top:4px}
+@media(max-width:600px){
+  .suite-cards{grid-template-columns:1fr}
+  .suite-card{padding:16px}
+}
 </style>
 </head>
 <body>
@@ -391,16 +404,38 @@ footer{background:var(--navy);border-top:1px solid var(--border);padding:40px 80
   <h2 class="sec-h">Five systems. One vendor. One support relationship.</h2>
   <p class="sec-intro">Start with the system that solves the problem you feel every day. Add others when that one is working.</p>
   <div class="suite-wrap">
-    <table class="suite-table">
-      <thead><tr><th>System</th><th>What it manages</th><th>Who uses it most</th><th></th></tr></thead>
-      <tbody>
-        <tr><td class="pname">TALA</td><td>Resident records, certificates, blotter, ordinances</td><td>Barangay Secretary</td><td><a href="#tala" class="plink">See details →</a></td></tr>
-        <tr><td class="pname">BudgetHub</td><td>Appropriations, disbursements, liquidation, reports</td><td>Barangay Treasurer</td><td><a href="#budgethub" class="plink">See details →</a></td></tr>
-        <tr><td class="pname">LEXICON</td><td>Katarungang Pambarangay cases, hearings, settlements</td><td>Lupon Tagapamayapa</td><td><a href="#lexicon" class="plink">See details →</a></td></tr>
-        <tr><td class="pname">DocuVault</td><td>Official documents, routing, versions, release log</td><td>Records Officer, Admin</td><td><a href="#docuvault" class="plink">See details →</a></td></tr>
-        <tr><td class="pname">RESQHUB</td><td>Incidents, evacuation, response activity, DRRM reports</td><td>MDRRMO, BDRRMC</td><td><a href="#resqhub" class="plink">See details →</a></td></tr>
-      </tbody>
-    </table>
+    <div class="suite-cards">
+  <div class="suite-card">
+    <div class="suite-card-name">TALA</div>
+    <div class="suite-card-desc">Resident records, certificates, blotter, ordinances</div>
+    <div class="suite-card-user">👤 Barangay Secretary</div>
+    <a href="#tala" class="plink">See details →</a>
+  </div>
+  <div class="suite-card">
+    <div class="suite-card-name">BudgetHub</div>
+    <div class="suite-card-desc">Appropriations, disbursements, liquidation, reports</div>
+    <div class="suite-card-user">👤 Barangay Treasurer</div>
+    <a href="#budgethub" class="plink">See details →</a>
+  </div>
+  <div class="suite-card">
+    <div class="suite-card-name">LEXICON</div>
+    <div class="suite-card-desc">Katarungang Pambarangay cases, hearings, settlements</div>
+    <div class="suite-card-user">👤 Lupon Tagapamayapa</div>
+    <a href="#lexicon" class="plink">See details →</a>
+  </div>
+  <div class="suite-card">
+    <div class="suite-card-name">DocuVault</div>
+    <div class="suite-card-desc">Official documents, routine records, archives</div>
+    <div class="suite-card-user">👤 Barangay Secretary / Clerk</div>
+    <a href="#docuvault" class="plink">See details →</a>
+  </div>
+  <div class="suite-card">
+    <div class="suite-card-name">RESQHUB</div>
+    <div class="suite-card-desc">Disaster response, evacuation, incident reports, DRRM</div>
+    <div class="suite-card-user">👤 BDRRMC / Punong Barangay</div>
+    <a href="#resqhub" class="plink">See details →</a>
+  </div>
+</div>
   </div>
   <div class="yt-bar">
     <div class="yt-icon">
